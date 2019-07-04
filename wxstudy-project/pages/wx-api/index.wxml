@@ -1,0 +1,41 @@
+<view class='index'>
+  <view class="header">
+    <view class="title">测试测试</view>
+    <view class="btn" bindtap="jumpAllClass">前往wx登录
+      <image class='btnimg' src='../../image/arrowright.png'></image>
+    </view>
+  </view>
+</view>
+
+<button type='primary' bindtap="clickRequest">点击发送请求</button>
+
+ <view class="menu-list">
+    <block wx:for="{{menuList}}" wx:for-item="menuItem">
+      <view class="menu-item">
+        <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
+          <text class="menu-item-name">{{menuItem.name}}</text>
+          <image
+            class="menu-item-arrow {{menuItem.opened ? 'open' : 'close'}} {{menuItem.url ? 'url' : ''}}"
+            src="../../image/arrowright.png">
+          </image>
+        </view>
+        <!-- <view class="menu-item-api-list {{menuItem.opened ? 'open' : 'close'}}">
+          <block wx:for="{{menuItem.APIList}}" wx:for-item="APIItem">
+            <navigator url="{{APIItem.url}}">
+              <view class="menu-item-api-item" style="{{index === 0 ? 'border-top:none;' : ''}}">
+                <view class="menu-item-api-item-text">
+                  <text class="menu-item-api-item-text-zhname">{{APIItem.zhName}}</text>
+                  <text class="menu-item-api-item-text-enname">{{APIItem.enName}}</text>
+                </view>
+                <image class="menu-item-api-item-arrow" src="/image/arrowright.png"></image>
+              </view>
+            </navigator>
+          </block>
+        </view> -->
+        <text class="menu-item-api-list {{menuItem.opened ? 'open' : 'close'}}">
+        我在测试数据我在测试数据我在测试数据我在测试数据我在测试数据我在测试数据我在测试数据我在测试数据我在测
+        我在测试数据我在测试数据我在测试数据我在测试数据我在测试数据试数据我在测试数据
+        </text>
+      </view>
+    </block>
+  </view>

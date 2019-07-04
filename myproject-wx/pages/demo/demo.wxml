@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper> -->
+  <!-- 地图 -->
+  <!-- <map :longitude="98"></map> -->
+  <!--pages/index/index.wxml-->
+  <view class="swiper-tab">
+    <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">选项一</view>
+    <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">选项二</view>
+    <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">选项三</view>
+  </view>
+
+  <swiper current="{{currentTab}}" class="swiper" duration="300" style="height:{{winHeight - 30}}px" bindchange="bindChange">
+    <swiper-item>
+      <view>页面一</view>
+    </swiper-item>
+    <swiper-item>
+      <view>页面二</view>
+    </swiper-item>
+    <swiper-item>
+      <view>页面三</view>
+    </swiper-item>
+  </swiper>
+
+</view>

@@ -1,0 +1,23 @@
+/* pages/class/index.wxss */
+
+.userinfo {
+  text-align: center;
+}
+.infoimg{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.title{
+  text-align: center
+}
+.page-body-info {
+  background-color: transparent;
+}
+.page-body-buttons button {
+  color: #21c932;
+  margin: 0 100rpx;
+}
+.page-body-buttons button:after {
+  border-color: #21c932;
+}

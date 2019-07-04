@@ -1,0 +1,25 @@
+<view class="index">
+  <!-- 头部 -->
+  <view class="head-view">
+    <view>小程序组件</view>
+    <view>这是展示小程序组件的DEMO。</view>
+  </view>
+  <view class="content-view">
+    <!-- 进度条 -->
+    <view class='content progress-view'>
+      <!-- 右侧显示进度 -->
+      <progress percent="20" show-info></progress>
+      <!-- 动态增加 -->
+      <progress percent='40' active></progress>
+      <!-- 宽度 -->
+      <progress percent='60' stroke-width='10'></progress>
+      <!-- 自定义颜色 -->
+      <progress percent='80' color='#06a5ff'></progress>
+    </view>
+    <!-- toast--提示状态 -->
+    <view class='toast-view'>
+      <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">默认</toast>
+       <button type="default" bindtap="toast1Tap">点击弹出默认toast</button>
+    </view>
+  </view>
+</view>
